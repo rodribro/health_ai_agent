@@ -232,3 +232,11 @@ docker-compose exec health-ai-api bash
 docker-compose exec postgres pg_isready -U health_ai
 ```
 
+### Future Work
+
+```bash
+-> Implement persistent conversations between the user and the AI based on each patient
+
+-> Implement a React based UI
+```
+
