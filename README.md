@@ -37,7 +37,7 @@ docker-compose up --build -d
 docker-compose exec health-ai-api python health_ai_agent/scripts/create_tables.py
 
 # Load MIMIC data
-docker-compose exec health-ai-api python health_ai_agent/scripts/load_data.py /path/to/mimic_data.parquet
+docker-compose exec health-ai-api python health_ai_agent/scripts/load_data.py health_ai_agent/data/mimic_discharge_summaries.parquet
 
 # Check status
 docker-compose ps
