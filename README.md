@@ -101,7 +101,7 @@ cp .env.example .env
 # Edit .env with your database credentials and HF_TOKEN
 
 # Start local database (if not using Docker)
-# Update POSTGRES_HOST=localhost in .env
+docker-compose -f docker-compose.dev.yml up
 
 # Run database setup
 uv run python health_ai_agent/scripts/create_tables.py
