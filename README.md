@@ -107,7 +107,7 @@ cp .env.example .env
 uv run python health_ai_agent/scripts/create_tables.py
 
 # Load sample data
-uv run python health_ai_agent/scripts/load_data.py path/to/data.parquet
+uv run python health_ai_agent/scripts/load_data.py health_ai_agent/data/mimic_discharge_summaries.parquet
 
 # Start development server
 uv run uvicorn health_ai_agent.main:app --reload
